@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Health Plus || Your Personal Health Assistant</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Responsive stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+</head>
+
+<body>
+
+    <div class="preloader"></div>
+
+    <!-- Header navbar start -->
+ <!--   <div class="header-topbar style-2">
+        <div class="container padding-none">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 welcome-top">
+                    <ul class="list-inline top-icon">
+                        <li><i class="fa fa-envelope"></i> contact@youdomain.com</li>
+                        <li><i class="fa fa-clock-o"></i> Mon - Sat 8.00 - 18.00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <ul class="list-inline text-right icon-style-1">
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="main-navbar conner-style style-2 position-fixed">
+        <div class="container padding-none">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- <a class="navbar-brand dis-none" href=""><img src="img/logo-black.png" alt="">
+                                </a>
+                            <a class="navbar-brand dis-block" href=""><img src="img/logo-black.png" alt="">
+                                </a> -->
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations-delay="1.8s" data-animations="fadeInUp">
+                            <ul class="nav navbar-nav bg-none navbar-right style-3">
+                                <li><a href="/Health_Plus">Home</a></li>
+                                <li><a href="login.html" class="btn" id="header-drop-4"><span>Login</span></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header navbar end -->
+
+    <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/bg/hp.jpg" alt="Slider Images"  class="slide-image"/>
+                <div class="bs-slider-overlay"></div>
+
+                <div class="slide-text slide_style_left">
+                    <h1 data-animation="animated fadeInRight"><span class="color-defult"> Login </span>Page</h1>
+                    <p data-animation="animated fadeInLeft">Please login</p>
+                    <form id="login" class="row g-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="email" class="form-label" data-animation="animated fadeInRight"><span class="color-defult">Email:</span></label>
+                                <input type="text" data-animation="animated fadeInRight" id="email" name="email" class="input-field form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="password" class="form-label" data-animation="animated fadeInLeft"><span class="color-defult">Password:</span></label>
+                                <input type="password" data-animation="animated fadeInLeft" id="password" name="password" class="input-field form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="usertype" class="form-label" data-animation="animated fadeInRight"><span class="color-defult">User Type:</span></label>
+                                <select data-animation="animated fadeInRight" id="usertype" name="usertype" class="input-field form-control" required>
+                                    <option class="input-field form-control" value="customer">Customer</option>
+                                    <option class="input-field form-control" value="admin">Administrator</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a onclick="getLocationAndSubmit()" class="btn btn-primary" data-animation="animated fadeInRight">Login</a>
+                            </div>
+                        </div>
+                    </form>
+                    <p>Don't have an account? <a href="signup.jsp">Sign Up Here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Style start -->
+    <section class="service-area over-layer-default" style="background-image:url(img/bg/5.jpg);">
+        <div class="container padding-bottom-none padding-top-40">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="service-item style-1 text-white border-right">
+                            <div class="service-icon">
+                                <i class="pe-7s-call"></i>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Give us a Call</a></h5>
+                                <p>+1-773-555-9922</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="service-item style-1 text-white">
+                            <div class="">
+                                <i class="pe-7s-mail-open"></i>
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Send us a Message</a></h5>
+                                <p>healthplus@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Style End -->
+
+    <a href="#" class="scrollup"><i class="pe-7s-up-arrow" aria-hidden="true"></i></a>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- all plugins and JavaScript -->
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/css3-animate-it.js"></script>
+    <script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/player.min.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
+    <script type="text/javascript" src="js/comming-soon.js"></script>
+
+    <!-- Main Custom JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Get User Location and Redirect to Servlet -->
+    <script>
+        function getLocationAndSubmit() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    console.log("latitude: ", latitude);
+                    console.log("longitude: ", longitude);
+    
+                    // Get the form data
+                    const loginData = $("#login").serializeArray();
+    
+                    // Add location data to the form data
+                    loginData.push({ name: "latitude", value: latitude });
+                    loginData.push({ name: "longitude", value: longitude });
+    
+                    // AJAX request to servlet
+                    $.ajax({
+                        type: "POST",
+                        url: "/Health_Plus/Login",
+                        data: loginData,
+                        success: function(response) {
+                            if(response.includes("Home")) {
+                                if(response.includes("User"))
+                                    window.location.href = "/Health_Plus/HomeUser.jsp";
+                                else
+                                    window.location.href = "/Health_Plus/HomeAdmin.jsp";
+                            } else {
+                                alert('Invalid Credentials. Please try again.');
+                            }
+                        },
+                        error: function(error) {
+                            console.error("Error sending data: ", error);
+                        }
+                    });
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
