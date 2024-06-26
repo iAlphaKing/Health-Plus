@@ -76,7 +76,7 @@ public class Login extends HttpServlet {
 
     private void fetchServices(HttpServletRequest request) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String apiKey = "AIzaSyAOhwrEXTnNLnDT2UT3_9ccsuufod3GaDk";
+        String apiKey = "your-api-key";
 
         // Construct the URL
         String url = "https://places.googleapis.com/v1/places:searchNearby";
